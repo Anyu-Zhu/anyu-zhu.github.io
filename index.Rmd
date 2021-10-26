@@ -1,5 +1,5 @@
 ---
-title: "My awesome website"
+title: "Anyu Zhu"
 output: 
   html_document:
     toc: true
