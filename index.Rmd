@@ -19,3 +19,4 @@ hihi
 ## Link to page within the site
 
 [About me](about.html)
+[Dashboard](plotly.html)
