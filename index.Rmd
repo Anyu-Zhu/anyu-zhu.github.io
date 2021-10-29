@@ -6,17 +6,17 @@ output:
     toc_float: true
 ---
 
-# This is Anyu's awesome website
+### Hi my name is Anyu. 
 
-hihi
+Currently I'm a first-year Master of Science student in Biostatistics (Theory and Methods track) at Columbia University Mailman School of Public Health.
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+<img src="images/me.jpg" width = "400" height = auto>
 
-## Links
+### About Me
 
-**[Linkedin](https://www.linkedin.com/in/anyu-zhu-81a241154/)
 
-## Link to page within the site
+### Fun Facts
 
-[About me](about.html)
-[Dashboard](plotly.html)
+
+### Contact Information
+

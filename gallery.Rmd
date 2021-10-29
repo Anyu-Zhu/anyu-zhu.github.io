@@ -1,0 +1,12 @@
+---
+title: "My Gallery"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+These are some of the photos I took
+
+I'm currently using a Fujifilm - XT200
+

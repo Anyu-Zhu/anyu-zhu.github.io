@@ -2,9 +2,16 @@ name: "Yay internet!"
 output_dir: "."
 navbar:
   title: "Home"
+  left:
+    - text: "Personal"
+      href: gallery.rmd
+    - text: "Dashboard"
+      href: dashboard.html
   right:
-    - text: "About"
-      href: about.html
+    - text: "Resume"
+      href: Anyu Zhu.pdf
+    - icon: fab fa-linkedin-in
+      href: https://www.linkedin.com/in/anyu-zhu-81a241154/
     - icon: fa-envelope fa-lg
       href: mailto:<az2587@columbia.edu>
     - icon: fa-github fa-lg
