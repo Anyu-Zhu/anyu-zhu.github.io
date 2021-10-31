@@ -6,7 +6,27 @@ output:
     toc_float: true
 ---
 
-These are some of the photos I took
+These are some of the photos I took. 
 
-I'm currently using a Fujifilm - XT200
+I'm currently holding a Fujifilm - XT200, and most of the times I use a IPhone. 
+
+### Nanjing my beloved hometown
+<img src="images/nanjing1.jpg" width = "400" height = auto>
+<img src="images/nanjing3.jpg" width = "400" height = auto>
+
+### My adorable little sister
+She is four years old!\
+<img src="images/sis1.jpg" width = "400" height = auto>
+
+### Shanghai
+<img src="images/shanghai1.jpg" width = "400" height = auto>
+<img src="images/shanghai2.jpg" width = "400" height = auto>
+
+### Suzhou
+<img src="images/suzhou1.jpg" width = "400" height = auto>
+<img src="images/suzhou2.jpg" width = "400" height = auto>
+
+### New York
+<img src="images/ny1.jpg" width = "400" height = auto>
+<img src="images/ny2.jpg" width = "400" height = auto>
 

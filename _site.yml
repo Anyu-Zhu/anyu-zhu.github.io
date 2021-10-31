@@ -3,10 +3,8 @@ output_dir: "."
 navbar:
   title: "Home"
   left:
-    - text: "Personal"
-      href: gallery.rmd
-    - text: "Dashboard"
-      href: dashboard.html
+    - text: "Gallery"
+      href: gallery.html
   right:
     - text: "Resume"
       href: Anyu Zhu.pdf
