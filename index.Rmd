@@ -11,7 +11,9 @@ Hi, My name is Anyu. Currently I'm a first-year Master of Science student in Bio
 <img src="images/me.jpg" width = "400" height = auto>
 
 ### About Me
-I obtained my BS in Statistical Science from The Chinese University of Hong Kong in 2021. I'm currently in my first year of Master's study. 
+I obtained my BS in Statistical Science from The Chinese University of Hong Kong in 2021. I'm currently in my first year of Master's study. I'm enthusiastic about data analysis and public health and I'm aspired to pursue a career as a biostatistician. 
+
+I have accumulated experience in data analysis, modeling, and programming in R and Python. Previously I worked as intern analyst in pharma and a non-profit organization. More details about my experience can be found in my [resume](Anyu Zhu.pdf). 
 
 ### Fun Facts
 I love collecting mugs. \
