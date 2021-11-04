@@ -15,9 +15,10 @@ I obtained my BS in Statistical Science from The Chinese University of Hong Kong
 
 I have accumulated experience in data analysis, modeling, and programming in R and Python. Previously I worked as intern analyst in pharma and a non-profit organization. More details about my experience can be found in my [resume](Anyu Zhu.pdf). 
 
+Holding on to the faith that 'Health is Human Right', through every line of code, every newly discovered correlation, and every step of calculation, I'm hoping to improve health for all. 
+
 ### Fun Facts
 I love collecting mugs. \
-My favorite TV shows are Grey's Anatomy and Friends. \
 Currently I'm learning Spanish. \
 I can remember almost every line in the movie Harry Potter and the Sorcerer's Stone. \
 I love photography and feel free to take a tour in my [gallery](gallery.html)!

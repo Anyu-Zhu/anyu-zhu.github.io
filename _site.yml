@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "Gallery"
       href: gallery.html
+    - text: "Dashboard"
+      href: dashboard.html
   right:
     - text: "Resume"
       href: Anyu Zhu.pdf
