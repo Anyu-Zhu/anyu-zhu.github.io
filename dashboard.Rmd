@@ -14,45 +14,69 @@ library(plotly)
 ```
 
 ```{r}
-data(nyc_airbnb)
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>%
-  select(
-    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
-  filter(
-    !is.na(rating), 
-    neighbourhood_group == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500)
+data("instacart")
+instacart = instacart %>% 
+  janitor::clean_names()
 ```
-
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Distribution of orders in each aisle (with number of orders > 10000)
 
 ```{r}
-nyc_airbnb %>%
-  mutate(text_label = str_c("Price: $", price, "\nRating: ", rating)) %>% 
+instacart %>% 
+  group_by(aisle, department) %>% 
+  summarize(n_ordered = n()) %>% 
+  filter(n_ordered > 10000) %>% 
   plot_ly(
-    x = ~lat, y = ~long, type = "scatter", mode = "markers",
-    color = ~price, text = ~text_label, alpha = 0.5)
+    x = ~n_ordered, y = ~reorder(aisle, n_ordered), type = "bar", color = ~department
+  ) %>% 
+  layout(
+    xaxis = list(title = "aisles"),
+    yaxis = list(title = "number of orders in each aisle"),
+    legend = list(orientation = 'h')
+  )
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Time distribution of orders
 
 ```{r}
-
+instacart %>% 
+   mutate(
+    order_dow = case_when(
+      order_dow == '0' ~ 'Sunday',
+      order_dow == '1' ~ 'Monday',
+      order_dow == '2' ~ 'Tuesday',
+      order_dow == '3' ~ 'Wednesday',
+      order_dow == '4' ~ 'Thursday',
+      order_dow == '5' ~ 'Friday',
+      order_dow == '6' ~ 'Saturday',
+    ),
+    order_dow = factor(order_dow, levels = c('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'))
+  ) %>% 
+  filter(aisle == 'yogurt') %>% 
+  plot_ly(
+    y = ~order_hour_of_day, x = ~order_dow, type = 'box', color = ~order_dow) %>%
+  layout(
+    xaxis = list(title = "day of week"),
+    yaxis = list(title = "order hour of day")
+  )
 ```
 
-### Chart C
+### Distribution of number of products ordered in each department
 
 ```{r}
-
+instacart %>%
+  distinct(department, product_id) %>% 
+  count(department) %>% 
+  mutate(department = forcats::fct_reorder(department, n)) %>% 
+  plot_ly(x = ~n, y = ~department, color = ~department, type = "scatter", 
+          orientation = 'h', colors = "Set2") %>% 
+  layout(xaxis = list(title = " number of products"),
+         yaxis = list(title = "department"))
 ```
 
