@@ -5,8 +5,8 @@ navbar:
   left:
     - text: "Gallery"
       href: gallery.html
-    - text: "Dashboard"
-      href: dashboard.html
+    - text: "Projects"
+      href: https://sz3029.github.io/final_project/
   right:
     - text: "Resume"
       href: Anyu Zhu.pdf
